@@ -25,5 +25,6 @@ This analysis was done for submission in response to questions posed to test kno
 
 - Data cleaning
 - Data wrangling
-- Exploratory Data Analysis (EDA)
+- Exploratory Data Alnalasis (EDA)
 - Providing summary 
+
