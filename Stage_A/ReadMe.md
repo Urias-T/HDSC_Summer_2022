@@ -6,10 +6,24 @@ This analysis was done for submission in response to questions posed to test kno
 
 **Data Description:** The dataset is from the Food and Agriculture Organization of the United Nations.
 
+## Data Features
+
+- Area Code
+- Area
+- Item Code
+- Item
+- Element Code
+- Element
+- Unit
+- Y2014 
+- Y2015 
+- Y2016 
+- Y2017 
+- Y2018
+
 ## Key areas tested in this quiz:
 
 - Data cleaning
 - Data wrangling
-- Exploratory Data Alnalasis (EDA)
+- Exploratory Data Analysis (EDA)
 - Providing summary 
-
