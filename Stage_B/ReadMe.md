@@ -45,4 +45,6 @@ Where indicated, hourly data (then interpolated) from the nearest airport weathe
 
 ## Key areas tested in this quiz:
 
+- Building a simple linear regression model.
 - Building a multivariate multiple regression model.
+- Measuring performance of various models.
