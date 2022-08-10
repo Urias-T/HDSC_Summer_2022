@@ -47,4 +47,4 @@ Where indicated, hourly data (then interpolated) from the nearest airport weathe
 
 - Building a simple linear regression model.
 - Building a multivariate multiple regression model.
-- Measuring performance of various models.
+- Measuring performance of various models. 
