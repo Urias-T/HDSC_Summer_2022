@@ -34,4 +34,4 @@ To do this, rather than using the "MultiLabelBinarizer" from sklearn for one-hot
 - Convolutional neural networks.
 - Transfer learning.
 - Hyperparameter tuning in deep learning.
-- Error analysis and debuggin of neural networks.
+- Error analysis and debugging of neural networks.
