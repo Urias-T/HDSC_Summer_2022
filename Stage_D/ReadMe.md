@@ -14,9 +14,24 @@ Predicitions were then made on unlabeled test images and the tags given were sav
 
 ![score](Score_Image.jpeg)
 
+**Challenge Encountered:** 
+
+Initially, I observed that the fbeta score was "flat" on the training data and "noisy" on the validation set although the loss curve was forming as expected indicating that learning was indeed taking place. This was a consistant occurence regardless of several attempts to tune hyperparameters and even change the optimization algorithm. On further investigation, I observed that the model was making the same predictions on all the input images.
+
+Eventually, I observed that the tensors representing the images were arrays of zeros. Finally, I found out that this was due to the fact that the images weren't in the expected RGB encoding but rather in CMYK encoding. Where the K ("black channel") had zeros as its values.
+
+It was clear from my research on this issue that the tensorflow "tf.io.decode_jpeg" method hadn't been optimized to handle 4-channel images of this nature and so my model wasn't performing as expected because of the fault in my image pre-processing.
+
+**Solution:**
+
+To fix this, I had to rebuild the input pipeline for my model in a manner were the image tensor isn't affected by the 4th channel which was creating the bug.
+
+To do this, rather than using the "MultiLabelBinarizer" from sklearn for one-hot encoding of the labels, I had to "manually" create dummy columns and use the "ImageDataGenerator" module and "flow_from_dataframe" method to build my image input pipeline.
+
 ## Key areas tested in this quiz:
 
 - Multi-label classification using neural networks.
 - Convolutional neural networks.
 - Transfer learning.
 - Hyperparameter tuning in deep learning.
+- Error analysis and debuggin of neural networks.
