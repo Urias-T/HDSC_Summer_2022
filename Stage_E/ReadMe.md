@@ -1,4 +1,4 @@
-# Stage D Tag - Along Code
+# Stage E Tag - Along Code
 ## Practical Time Series Analysis & Forecast
 
 This analysis and the models built was done for submission in response to questions posed to test knowledge gained from Stage D of the Hamoye Summer 2022 internship.
